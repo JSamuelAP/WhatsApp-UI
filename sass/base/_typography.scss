@@ -1,0 +1,4 @@
+body {
+  font-family: $font-family;
+  font-weight: map-get($map: $font-weight, $key: regular);
+}
