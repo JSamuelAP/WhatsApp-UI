@@ -8,13 +8,18 @@ $white:           #FFFFFF;
 $og-chat-bubble:  #DCF8C6;
 $checkmark-blue:  #34B7F1;
 $chat-background: #ECE5DD;
+$text-dark:    #000000;
+$text-light:   rgba(0, 0, 0, 0.6);
+$text-lighter: rgba(0, 0, 0, 0.4);
 
 /*
  * Typography
  */
 $font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$font-weight: (
-  bold:    600,
-  regular: 500,
-  light:   400
-);
+$font-weight: 400;
+$font-size-chat:    17px;
+$font-size-date:    12px;
+$font-size-message: 13px;
+$line-height-chat:    normal;
+$line-height-date:    14px;
+$line-height-message: 20px;

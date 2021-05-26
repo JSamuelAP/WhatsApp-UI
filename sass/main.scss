@@ -1,5 +1,8 @@
 @import 'abstracts/variables';
 
-@import 'base/typography';
+@import 'base/reset',
+        'base/typography';
 
-@import 'layout/header';
+@import 'layout/body',
+        'layout/screen',
+        'layout/header';
