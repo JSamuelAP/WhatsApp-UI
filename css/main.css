@@ -20,10 +20,28 @@ h5, h6 {
   margin: 0;
 }
 
+.circle-badge {
+  display: inline-block;
+  line-height: 135%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #075E54;
+}
+
+body {
+  background-color: #128C7E;
+}
+
 .screen {
   width: 100%;
   max-width: 500px;
   height: 100vh;
   margin: 0 auto;
+}
+
+.header nav {
+  background-color: #075E54;
 }
 /*# sourceMappingURL=main.css.map */
