@@ -1,9 +1,11 @@
 .circle-badge {
   display: inline-block;
-  line-height: 135%;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #fff;
-  color: $teal-green;
+  &.chats {
+    line-height: 135%;
+    color: $teal-green;
+    background-color: #fff;
+  }
 }
