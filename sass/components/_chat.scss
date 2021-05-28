@@ -1,0 +1,17 @@
+.chat {
+  &__name {
+    font-size: $font-size-chat;
+    line-height: $line-height-chat;
+    color: $text-dark;
+  }
+  &__date {
+    font-size: $font-size-date;
+    line-height: $line-height-date;
+    color: $text-lighter;
+  }
+  &__message {
+    font-size: $font-size-message;
+    line-height: $line-height-message;
+    color: $text-light;
+  }
+}

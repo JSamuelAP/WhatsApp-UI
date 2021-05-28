@@ -1,0 +1,12 @@
+
+main {
+  height: 100%;
+}
+.chats {
+  height: 100%;
+  background-color: $white;
+  overflow-y: scroll;
+  .row {
+    margin-bottom: 0;
+  }
+}

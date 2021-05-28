@@ -1,6 +1,8 @@
 .header {
   nav {
     background-color: $teal-green;
+    position: relative;
+    z-index: 100;
     .brand-logo {
       left: 1rem;
     }

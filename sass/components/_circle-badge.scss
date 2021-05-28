@@ -1,11 +1,7 @@
-.circle-badge {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
+nav ul a span.badge {
+  min-width: 22px;
   border-radius: 50%;
-  &.chats {
-    line-height: 135%;
-    color: $teal-green;
-    background-color: #fff;
-  }
+  background-color: $white;
+  color: $teal-green;
+  line-height: 20px;
 }

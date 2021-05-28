@@ -20,17 +20,30 @@ h5, h6 {
   margin: 0;
 }
 
-.circle-badge {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
+nav ul a span.badge {
+  min-width: 22px;
   border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #075E54;
+  line-height: 20px;
 }
 
-.circle-badge.chats {
-  line-height: 135%;
-  color: #075E54;
-  background-color: #fff;
+.chat__name {
+  font-size: 17px;
+  line-height: normal;
+  color: #000000;
+}
+
+.chat__date {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.chat__message {
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 body {
@@ -46,6 +59,8 @@ body {
 
 .header nav {
   background-color: #075E54;
+  position: relative;
+  z-index: 100;
 }
 
 .header nav .brand-logo {
@@ -72,5 +87,19 @@ body {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
+}
+
+main {
+  height: 100%;
+}
+
+.chats {
+  height: 100%;
+  background-color: #FFFFFF;
+  overflow-y: scroll;
+}
+
+.chats .row {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
