@@ -1,11 +1,7 @@
-
-main {
-  height: 100%;
-}
 .chats {
-  height: 100%;
+  height: calc(100vh - 112px);
   background-color: $white;
-  overflow-y: scroll;
+  overflow-y: auto;
   .row {
     margin-bottom: 0;
   }
