@@ -98,4 +98,8 @@ body {
 .chats .row {
   margin-bottom: 0;
 }
+
+.chats img {
+  width: 60px;
+}
 /*# sourceMappingURL=main.css.map */
