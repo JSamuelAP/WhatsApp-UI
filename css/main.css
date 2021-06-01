@@ -28,6 +28,10 @@ nav ul a span.badge {
   line-height: 20px;
 }
 
+.chat img {
+  width: 60px;
+}
+
 .chat__name {
   font-size: 17px;
   line-height: normal;
@@ -44,6 +48,24 @@ nav ul a span.badge {
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.6);
+}
+
+.chat__message i {
+  font-size: 18px;
+  position: relative;
+  top: 4px;
+}
+
+.chat.new-messages .chat__date {
+  color: #25D366;
+}
+
+.chat.seen-message .tick {
+  color: #34B7F1;
+}
+
+.chat.writting .chat__message {
+  color: #25D366;
 }
 
 body {
@@ -97,9 +119,5 @@ body {
 
 .chats .row {
   margin-bottom: 0;
-}
-
-.chats img {
-  width: 60px;
 }
 /*# sourceMappingURL=main.css.map */

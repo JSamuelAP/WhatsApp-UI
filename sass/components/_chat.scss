@@ -1,4 +1,7 @@
 .chat {
+  img {
+    width: 60px;
+  }
   &__name {
     font-size: $font-size-chat;
     line-height: $line-height-chat;
@@ -13,5 +16,23 @@
     font-size: $font-size-message;
     line-height: $line-height-message;
     color: $text-light;
+    i {
+      font-size: 18px;
+      position: relative;
+      top: 4px;
+    }
+  }
+  &.new-messages {
+    .chat__date {
+      color: $light-green;
+    }
+  }
+  &.seen-message .tick {
+    color: $checkmark-blue;
+  }
+  &.writting {
+    .chat__message {
+      color: $light-green;
+    }
   }
 }
