@@ -1,236 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WhatsApp</title>
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <!-- Compiled and minified Materialize CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/main.min.css">
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-<body>
-  <div class="screen">
-    <header class="header">
-      <nav class="nav-extended">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo left">WhatsApp</a>
-          <ul class="right">
-            <li><a href="#"><i class="material-icons">search</i></a></li>
-            <li>
-              <a href="#!" class="dropdown-trigger" data-target="dropdown1">
-                <i class="material-icons">more_vert</i>
-              </a>
-            </li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Compiled and minified Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.min.css" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="screen">
+      <header class="header">
+        <nav class="nav-extended">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo left">WhatsApp</a>
+            <ul class="right">
+              <li>
+                <a href="#"><i class="material-icons">search</i></a>
+              </li>
+              <li>
+                <a href="#!" class="dropdown-trigger" data-target="dropdown1">
+                  <i class="material-icons">more_vert</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+              <li class="tab disabled">
+                <a href="#"><i class="material-icons">camera_alt</i></a>
+              </li>
+              <li class="tab">
+                <a href="#chats" class="active waves-effect waves-light"
+                  >chats
+                  <span class="badge">2</span>
+                </a>
+              </li>
+              <li class="tab">
+                <a href="#" class="waves-effect waves-light">estados</a>
+              </li>
+              <li class="tab">
+                <a href="#" class="waves-effect waves-light">llamadas</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">Nuevo grupo</a></li>
+          <li><a href="#!">Nueva difusión</a></li>
+          <li><a href="#!">WhatsApp Web</a></li>
+          <li><a href="#!">Mensajes destacados</a></li>
+          <li><a href="#!">Ajustes</a></li>
+        </ul>
+      </header>
+      <main>
+        <div class="chats">
+          <article class="section chat new-messages">
+            <a href="#">
+              <div class="row">
+                <div class="col s2">
+                  <img
+                    src="images/profile-pedro.jpg"
+                    alt="Foto de perfil del contacto"
+                    class="circle"
+                  />
+                </div>
+                <div class="col s8">
+                  <span class="chat__name">Pedro</span><br />
+                  <span class="truncate chat__message">Hola como estás</span>
+                </div>
+                <div class="col s2 right-align">
+                  <time class="chat__date" datetime="16:28">4:28 p.m.</time>
+                </div>
+              </div>
+            </a>
+          </article>
+          <div class="divider"></div>
+          <article class="section chat">
+            <a href="#">
+              <div class="row">
+                <div class="col s2">
+                  <img
+                    src="images/profile-family.jpg"
+                    alt="Foto de perfil del contacto"
+                    class="circle"
+                  />
+                </div>
+                <div class="col s8">
+                  <span class="chat__name">Familia</span><br />
+                  <span class="truncate chat__message"
+                    >Mamá: <i class="material-icons">image</i> Foto</span
+                  >
+                </div>
+                <div class="col s2 right-align">
+                  <time class="chat__date" datetime="2021-05-29">ayer</time>
+                </div>
+              </div>
+            </a>
+          </article>
+          <div class="divider"></div>
+          <article class="section chat seen-message">
+            <a href="#">
+              <div class="row">
+                <div class="col s2">
+                  <img
+                    src="images/profile-sofi.jpg"
+                    alt="Foto de perfil del contacto"
+                    class="circle"
+                  />
+                </div>
+                <div class="col s8">
+                  <span class="chat__name">Sofi</span><br />
+                  <span class="truncate chat__message"
+                    ><i class="material-icons tick">check</i> Gracias, nos
+                    vemos</span
+                  >
+                </div>
+                <div class="col s2 right-align">
+                  <time class="chat__date" datetime="2021-05-28">5/28/21</time>
+                </div>
+              </div>
+            </a>
+          </article>
+          <div class="divider"></div>
+          <article class="section chat">
+            <a href="#">
+              <div class="row">
+                <div class="col s2">
+                  <img
+                    src="images/profile-unknown.jpg"
+                    alt="Foto de perfil del contacto"
+                    class="circle"
+                  />
+                </div>
+                <div class="col s8">
+                  <span class="chat__name">+52 123 456 7890</span><br />
+                  <span class="truncate chat__message">Buenas tardes</span>
+                </div>
+                <div class="col s2 right-align">
+                  <time class="chat__date" datetime="2021-05-28">5/28/21</time>
+                </div>
+              </div>
+            </a>
+          </article>
+          <div class="divider"></div>
+          <article class="section chat new-messages">
+            <a href="#">
+              <div class="row">
+                <div class="col s2">
+                  <img
+                    src="images/profile-jsamuel.png"
+                    alt="Foto de perfil del contacto"
+                    class="circle"
+                  />
+                </div>
+                <div class="col s8">
+                  <span class="chat__name">JSamuel</span><br />
+                  <span class="truncate chat__message"
+                    >Click aquí para ver más de mis proyectos</span
+                  >
+                </div>
+                <div class="col s2 right-align">
+                  <time class="chat__date" datetime="2021-05-27">5/27/21</time>
+                </div>
+              </div>
+            </a>
+          </article>
+          <div class="divider"></div>
+          <article class="section chat">
+            <a href="#">
+              <div class="row">
+                <div class="col s2">
+                  <img
+                    src="images/profile-university.jpg"
+                    alt="Foto de perfil del contacto"
+                    class="circle"
+                  />
+                </div>
+                <div class="col s8">
+                  <span class="chat__name">Universidad</span><br />
+                  <span class="truncate chat__message"
+                    >Luis: te falto la conclusión</span
+                  >
+                </div>
+                <div class="col s2 right-align">
+                  <time class="chat__date" datetime="2021-05-27">5/27/21</time>
+                </div>
+              </div>
+            </a>
+          </article>
+          <div class="divider"></div>
+          <article class="section chat">
+            <a href="#">
+              <div class="row">
+                <div class="col s2">
+                  <img
+                    src="images/profile-work.jpg"
+                    alt="Foto de perfil del contacto"
+                    class="circle"
+                  />
+                </div>
+                <div class="col s8">
+                  <span class="chat__name">Trabajo</span><br />
+                  <span class="truncate chat__message"
+                    >+52 102 938 4756:
+                    <i class="material-icons">mic</i> 0:19</span
+                  >
+                </div>
+                <div class="col s2 right-align">
+                  <time class="chat__date" datetime="2021-05-20">5/20/21</time>
+                </div>
+              </div>
+            </a>
+          </article>
+          <div class="divider"></div>
+          <article class="section chat">
+            <a href="#">
+              <div class="row">
+                <div class="col s2">
+                  <img
+                    src="images/profile-unknown2.jpg"
+                    alt="Foto de perfil del contacto"
+                    class="circle"
+                  />
+                </div>
+                <div class="col s8">
+                  <span class="chat__name">+52 098 765 4321</span><br />
+                  <span class="truncate chat__message"
+                    ><i class="material-icons tick">check</i> ??</span
+                  >
+                </div>
+                <div class="col s2 right-align">
+                  <time class="chat__date" datetime="2021-05-11">5/11/21</time>
+                </div>
+              </div>
+            </a>
+          </article>
+          <div class="divider"></div>
+          <article class="section chat writting">
+            <a href="#">
+              <div class="row">
+                <div class="col s2">
+                  <img
+                    src="images/profile-default.jpg"
+                    alt="Foto de perfil del contacto"
+                    class="circle"
+                  />
+                </div>
+                <div class="col s8">
+                  <span class="chat__name">Desconocido</span><br />
+                  <span class="truncate chat__message">escribiendo...</span>
+                </div>
+                <div class="col s2 right-align">
+                  <time class="chat__date" datetime="2021-04-24">4/24/21</time>
+                </div>
+              </div>
+            </a>
+          </article>
+          <div class="divider"></div>
         </div>
-        <div class="nav-content">
-          <ul class="tabs tabs-transparent">
-            <li class="tab disabled">
-              <a href="#"><i class="material-icons">camera_alt</i></a>
-            </li>
-            <li class="tab">
-              <a href="#chats" class="active waves-effect waves-light">chats
-                <span class="badge">2</span>
-              </a>
-            </li>
-            <li class="tab">
-              <a href="#" class="waves-effect waves-light">estados</a>
-            </li>
-            <li class="tab">
-              <a href="#" class="waves-effect waves-light">llamadas</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#!">Nuevo grupo</a></li>
-        <li><a href="#!">Nueva difusión</a></li>
-        <li><a href="#!">WhatsApp Web</a></li>
-        <li><a href="#!">Mensajes destacados</a></li>
-        <li><a href="#!">Ajustes</a></li>
-      </ul>
-    </header>
-    <main>
-      <div class="chats">
-        <article class="section chat new-messages">
-          <a href="#">
-            <div class="row">
-              <div class="col s2">
-                <img src="images/profile-pedro.jpg" alt="Foto de perfil del contacto" class="circle">
-              </div>
-              <div class="col s8">
-                <span class="chat__name">Pedro</span><br>
-                <span class="truncate chat__message">Hola como estás</span>
-              </div>
-              <div class="col s2 right-align">
-                <time class="chat__date" datetime="16:28">4:28 p.m.</time>
-              </div>
-            </div>
-          </a>
-        </article>
-        <div class="divider"></div>
-        <article class="section chat">
-          <a href="#">
-            <div class="row">
-              <div class="col s2">
-                <img src="images/profile-family.jpg" alt="Foto de perfil del contacto" class="circle">
-              </div>
-              <div class="col s8">
-                <span class="chat__name">Familia</span><br>
-                <span class="truncate chat__message">Mamá: <i class="material-icons">image</i> Foto</span>
-              </div>
-              <div class="col s2 right-align">
-                <time class="chat__date" datetime="2021-05-29">ayer</time>
-              </div>
-            </div>
-          </a>
-        </article>
-        <div class="divider"></div>
-        <article class="section chat seen-message">
-          <a href="#">
-            <div class="row">
-              <div class="col s2">
-                <img src="images/profile-sofi.jpg" alt="Foto de perfil del contacto" class="circle">
-              </div>
-              <div class="col s8">
-                <span class="chat__name">Sofi</span><br>
-                <span class="truncate chat__message"><i class="material-icons tick">check</i> Gracias, nos vemos</span>
-              </div>
-              <div class="col s2 right-align">
-                <time class="chat__date" datetime="2021-05-28">5/28/21</time>
-              </div>
-            </div>
-          </a>
-        </article>
-        <div class="divider"></div>
-        <article class="section chat">
-          <a href="#">
-            <div class="row">
-              <div class="col s2">
-                <img src="images/profile-unknown.jpg" alt="Foto de perfil del contacto" class="circle">
-              </div>
-              <div class="col s8">
-                <span class="chat__name">+52 123 456 7890</span><br>
-                <span class="truncate chat__message">Buenas tardes</span>
-              </div>
-              <div class="col s2 right-align">
-                <time class="chat__date" datetime="2021-05-28">5/28/21</time>
-              </div>
-            </div>
-          </a>
-        </article>
-        <div class="divider"></div>
-        <article class="section chat new-messages">
-          <a href="#">
-            <div class="row">
-              <div class="col s2">
-                <img src="images/profile-jsamuel.png" alt="Foto de perfil del contacto" class="circle">
-              </div>
-              <div class="col s8">
-                <span class="chat__name">JSamuel</span><br>
-                <span class="truncate chat__message">Click aquí para ver más de mis proyectos</span>
-              </div>
-              <div class="col s2 right-align">
-                <time class="chat__date" datetime="2021-05-27">5/27/21</time>
-              </div>
-            </div>
-          </a>
-        </article>
-        <div class="divider"></div>
-        <article class="section chat">
-          <a href="#">
-            <div class="row">
-              <div class="col s2">
-                <img src="images/profile-university.jpg" alt="Foto de perfil del contacto" class="circle">
-              </div>
-              <div class="col s8">
-                <span class="chat__name">Universidad</span><br>
-                <span class="truncate chat__message">Luis: te falto la conclusión</span>
-              </div>
-              <div class="col s2 right-align">
-                <time class="chat__date" datetime="2021-05-27">5/27/21</time>
-              </div>
-            </div>
-          </a>
-        </article>
-        <div class="divider"></div>
-        <article class="section chat">
-          <a href="#">
-            <div class="row">
-              <div class="col s2">
-                <img src="images/profile-work.jpg" alt="Foto de perfil del contacto" class="circle">
-              </div>
-              <div class="col s8">
-                <span class="chat__name">Trabajo</span><br>
-                <span class="truncate chat__message">+52 102 938 4756: <i class="material-icons">mic</i> 0:19</span>
-              </div>
-              <div class="col s2 right-align">
-                <time class="chat__date" datetime="2021-05-20">5/20/21</time>
-              </div>
-            </div>
-          </a>
-        </article>
-        <div class="divider"></div>
-        <article class="section chat">
-          <a href="#">
-            <div class="row">
-              <div class="col s2">
-                <img src="images/profile-unknown2.jpg" alt="Foto de perfil del contacto" class="circle">
-              </div>
-              <div class="col s8">
-                <span class="chat__name">+52 098 765 4321</span><br>
-                <span class="truncate chat__message"><i class="material-icons tick">check</i> ??</span>
-              </div>
-              <div class="col s2 right-align">
-                <time class="chat__date" datetime="2021-05-11">5/11/21</time>
-              </div>
-            </div>
-          </a>
-        </article>
-        <div class="divider"></div>
-        <article class="section chat writting">
-          <a href="#">
-            <div class="row">
-              <div class="col s2">
-                <img src="images/profile-default.jpg" alt="Foto de perfil del contacto" class="circle">
-              </div>
-              <div class="col s8">
-                <span class="chat__name">Desconocido</span><br>
-                <span class="truncate chat__message">escribiendo...</span>
-              </div>
-              <div class="col s2 right-align">
-                <time class="chat__date" datetime="2021-04-24">4/24/21</time>
-              </div>
-            </div>
-          </a>
-        </article>
-        <div class="divider"></div>
-      </div>
-    </main>
-  </div>
-  <!-- Compiled and minified Materialize JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    // M.AutoInit();
-    document.addEventListener('DOMContentLoaded', function() {
-      var dropdowns = document.querySelectorAll('.dropdown-trigger');
-      var instancesDropdown = M.Dropdown.init(dropdowns, {
-        alignment: 'right',
-        constrainWidth: false
-      });
+      </main>
+    </div>
+    <!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      // M.AutoInit();
+      document.addEventListener("DOMContentLoaded", function () {
+        var dropdowns = document.querySelectorAll(".dropdown-trigger");
+        var instancesDropdown = M.Dropdown.init(dropdowns, {
+          alignment: "right",
+          constrainWidth: false,
+        });
 
-      var tabs = document.querySelectorAll('.tabs');
-      var instancesTabs = M.Tabs.init(tabs, {
-        swipeable: false
+        var tabs = document.querySelectorAll(".tabs");
+        var instancesTabs = M.Tabs.init(tabs, {
+          swipeable: false,
+        });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
 <!-- <img src="https://via.placeholder.com/100" alt="jaja"> -->
