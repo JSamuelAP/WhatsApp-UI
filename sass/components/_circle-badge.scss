@@ -1,7 +1,16 @@
-nav ul a span.badge {
+%badge {
   min-width: 22px;
   border-radius: 50%;
+  line-height: 20px;
+}
+nav ul a span.badge {
+  @extend %badge;
   background-color: $white;
   color: $teal-green;
-  line-height: 20px;
+}
+.chat.new-messages .badge {
+  @extend %badge;
+  margin-top: .5rem;
+  background-color: $light-green;
+  color: $white;
 }
