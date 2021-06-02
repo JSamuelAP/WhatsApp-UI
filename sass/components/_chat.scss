@@ -35,4 +35,7 @@
       color: $light-green;
     }
   }
+  &:hover {
+    background-color: $chat-hover;
+  }
 }

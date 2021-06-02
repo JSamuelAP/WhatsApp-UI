@@ -23,18 +23,19 @@ h5, h6 {
 nav ul a span.badge, .chat.new-messages .badge {
   min-width: 22px;
   border-radius: 50%;
+  font-size: 12px;
   line-height: 20px;
 }
 
 nav ul a span.badge {
-  background-color: #FFFFFF;
-  color: #075E54;
+  background-color: #ffffff;
+  color: #075e54;
 }
 
 .chat.new-messages .badge {
-  margin-top: .5rem;
-  background-color: #25D366;
-  color: #FFFFFF;
+  margin-top: 0.5rem;
+  background-color: #25d366;
+  color: #ffffff;
 }
 
 .chat img {
@@ -66,19 +67,23 @@ nav ul a span.badge {
 }
 
 .chat.new-messages .chat__date {
-  color: #25D366;
+  color: #25d366;
 }
 
 .chat.seen-message .tick {
-  color: #34B7F1;
+  color: #34b7f1;
 }
 
 .chat.writting .chat__message {
-  color: #25D366;
+  color: #25d366;
+}
+
+.chat:hover {
+  background-color: #f5f5f5;
 }
 
 body {
-  background-color: #128C7E;
+  background-color: #128c7e;
 }
 
 .screen {
@@ -89,7 +94,7 @@ body {
 }
 
 .header nav {
-  background-color: #075E54;
+  background-color: #075e54;
   position: relative;
   z-index: 100;
 }
@@ -122,7 +127,7 @@ body {
 
 .chats {
   height: calc(100vh - 112px);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   overflow-y: auto;
 }
 
