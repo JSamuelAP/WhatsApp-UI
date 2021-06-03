@@ -1,12 +1,7 @@
-@import 'abstracts/variables';
+@import "abstracts/variables";
 
-@import 'base/reset',
-        'base/typography';
+@import "base/reset", "base/typography";
 
-@import 'components/circle-badge',
-        'components/chat';
+@import "components/circle-badge", "components/chat", "components/fab";
 
-@import 'layout/body',
-        'layout/screen',
-        'layout/header',
-        'layout/chats';
+@import "layout/body", "layout/screen", "layout/header", "layout/chats";

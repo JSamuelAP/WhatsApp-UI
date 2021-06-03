@@ -82,6 +82,10 @@ nav ul a span.badge {
   background-color: #f5f5f5;
 }
 
+.fixed-action-btn .btn-floating {
+  background-color: #25d366;
+}
+
 body {
   background-color: #128c7e;
 }
