@@ -127,11 +127,20 @@ body {
 
 .chats {
   height: calc(100vh - 112px);
+  padding-bottom: 100px;
   background-color: #ffffff;
   overflow-y: auto;
 }
 
 .chats .row {
   margin-bottom: 0;
+}
+
+.chats::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chats::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=main.css.map */
